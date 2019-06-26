@@ -8,7 +8,7 @@ public interface TypeService
 {
     List<Type> findAll();
 
-    Type findRoleById(long id);
+    Type findTypeById(long id);
 
     void delete(long id);
 

@@ -53,7 +53,7 @@ public class UserController
         return new ResponseEntity<>(u, HttpStatus.OK);
     }
 
-
+    @PreAuthorize("hasAuthority('ROLE_ADMIN')")
     @GetMapping(value = "/getusername",
                 produces = {"application/json"})
     @ResponseBody
